@@ -1,0 +1,28 @@
+my:
+  app:
+    db:
+      driver: ORACLE
+      url: JDBC URL
+---
+my:
+  app:
+    db:
+      driver: MySql TEst
+      url: mySql url
+spring:
+  config:
+    activate:
+      on-profile:
+        - qa
+        - prod
+---
+my:
+  app:
+    db:
+      driver: MySql TEst3
+      url: mySql url3
+spring:
+  config:
+    activate:
+      on-profile:
+        - uat

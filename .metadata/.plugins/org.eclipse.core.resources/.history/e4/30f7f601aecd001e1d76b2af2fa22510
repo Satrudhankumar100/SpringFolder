@@ -1,0 +1,21 @@
+package com.app.service.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.app.model.Product;
+import com.app.repo.ProductRepository;
+import com.app.service.ProductService;
+
+public class ProductServiceImpl implements ProductService{
+
+	@Autowired
+	private ProductRepository productRepository;
+	
+	
+	@Override
+	public Product savePrdouct(Product product) {
+		
+		return productRepository.save(new Product("LifeBoy",39.0,2));
+	}
+
+}

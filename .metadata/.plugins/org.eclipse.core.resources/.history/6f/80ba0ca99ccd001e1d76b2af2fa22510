@@ -1,0 +1,33 @@
+package com.app.book.controller;
+
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
+
+import com.app.book.entity.User;
+
+public class UserLoginController {
+	
+	 @GetMapping("/login")
+	 public String showLogin() {
+	  return "login";
+	 }
+
+	 //Check for Credentials
+	 @PostMapping("/login")
+	 public String login(@ModelAttribute(name="loginForm") User user, Model m) {
+	  String uname = user.getUserName();
+	  String pass = user.getUserPassword();
+	  if(uname.equals("Admin") && pass.equals("Admin@123")) {
+	   m.addAttribute("uname", uname);
+	   m.addAttribute("pass", pass);
+	   return "welcome";
+	  }
+	  m.addAttribute("error", "Incorrect Username & Password");
+	  return "User";
+	  
+	 }
+	}
+
+}

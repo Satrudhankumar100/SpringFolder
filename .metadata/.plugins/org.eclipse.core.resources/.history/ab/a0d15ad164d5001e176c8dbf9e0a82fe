@@ -1,0 +1,16 @@
+package com.app.model;
+
+import java.util.List;
+
+public class Student {
+	
+	
+	private Integer id;
+	private String stdName;
+	private Double stdFee;
+	private String stdGen;
+	
+	private List<String> courses;
+	private List<String> lang;
+
+}

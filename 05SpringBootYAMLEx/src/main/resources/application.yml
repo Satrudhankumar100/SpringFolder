@@ -1,0 +1,16 @@
+my:
+  app:
+    pcode: 101
+    pid: 232
+    pcost: 45.33
+    colors:
+      - red
+      - blue
+      - green
+    models:
+      m1: abc
+      m2: dbc
+      m3: xxx
+    
+     
+      

@@ -1,0 +1,7 @@
+package com.app.raghu.model;
+
+public interface Admin {
+	
+	private 
+
+}

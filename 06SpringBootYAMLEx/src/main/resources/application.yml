@@ -1,0 +1,18 @@
+my:
+  book:
+    bname: SAM
+    authors:
+      - bharti bharwan
+      - kc sinha
+      - rs agarwal
+    versions:
+      - first
+      - second
+      - firs
+      - third
+      - first
+    pob:
+      pid: 101
+      pcode: A102
+      active: true
+    

@@ -1,0 +1,21 @@
+package com.app.model;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Entity
+@Table(name="PRODUCT_CURD")
+public class Product {
+	
+	private Integer prodId;
+	private String prodName;
+	private Double prodCost;
+	private Integer prodQty;
+
+}

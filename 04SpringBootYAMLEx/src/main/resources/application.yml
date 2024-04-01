@@ -1,0 +1,4 @@
+my:
+  app:
+    driver: oracle
+    url: jdbc

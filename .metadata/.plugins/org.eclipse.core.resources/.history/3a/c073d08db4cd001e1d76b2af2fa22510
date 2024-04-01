@@ -1,0 +1,16 @@
+package com.app;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.app.service.impl.ProductServiceImpl;
+
+@SpringBootApplication
+public class ProductCrudAppApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(ProductCrudAppApplication.class, args);
+		
+	}
+
+}

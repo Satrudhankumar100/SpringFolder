@@ -1,0 +1,5 @@
+package com.app.book.entity;
+
+public class User {
+
+}
